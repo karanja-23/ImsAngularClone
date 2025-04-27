@@ -3,24 +3,25 @@
     position: fixed;
     top: 0 ;
     left: 0;
+    padding-top: 2px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;    
     height: 100vh;
-    background-color: white;
+    background-color: rgb(240, 238, 238);
     align-items: center;
     border-radius: 0px 20px 0px 0px;
     color: rgb(20, 20, 59);
+    transition: width 0.3s ease;
 }
 .menu img{    
     height: 50px;
-    background-color: white;
     padding: 7px 0px;
  }
  .pi-bars{
     padding: 7px 0px;
     height: 50px;
     color: rgb(20, 20, 59);
-    background-color: white;
     font-size: 22px;
     padding: 10px 0px;
     font-weight: 700;
@@ -31,13 +32,23 @@
     margin-top: 20px;
     position: relative;
     width: 100%;
-    gap: 10px;
-    background-color: white;
+    gap: 20px;
  }
  .menu-item {
+    cursor: pointer;
     width: 100%;
     display: flex;
     padding: 7px 0px;
     align-items: center;
     gap: 20px;
+    
  }
+ .profile{
+    width: 100%;
+    position: absolute;
+    bottom: 120px;
+    display: flex;
+   flex-direction: column;  
+   gap: 30px;
+ }
+ 
