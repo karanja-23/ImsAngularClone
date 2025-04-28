@@ -37,6 +37,7 @@
     width: 100%;
     gap: 25px;
  }
+
  .menu-item {
     cursor: pointer;
     width: 100%;
@@ -45,6 +46,10 @@
     align-items: center;
     gap: 20px;
     
+ }
+ .menu-item:hover{
+   background-color: black;
+   color: white;
  }
  .menu-item i{
    font-weight: 800;

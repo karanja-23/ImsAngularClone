@@ -5,14 +5,10 @@ import { TableComponent } from '../table/table.component';
   imports: [TableComponent],
   template: `
     <div>
-      <app-table>
-      
-      
-      </app-table>
+    
+      <app-table></app-table>
     </div>
   `,
-  styleUrl: './home.component.css'
+  styleUrl: './home.component.css',
 })
-export class HomeComponent {
-
-}
+export class HomeComponent {}

@@ -1,9 +1,9 @@
 .content{
     position: absolute;
-    width: calc(100% - 100px);
+    max-width: calc(100% - 75px);
     height: calc(100% - 420px);
     box-sizing: border-box;
-    left: 90px;
+    left: 75px;
     top: 100px;
     background-color:  rgb(240, 238, 238);
     padding: 10px 20px;
