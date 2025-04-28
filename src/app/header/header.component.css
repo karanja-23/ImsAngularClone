@@ -2,7 +2,7 @@
 .header{
     position: fixed;
     top: 0 ;
-    left: 60px;
+    left: 50px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;    
@@ -14,6 +14,7 @@
     align-items: center;
     padding: 2px 30px;
     justify-content: space-between;
+    background-color: white;
 }
 .greeting{
     display: flex;

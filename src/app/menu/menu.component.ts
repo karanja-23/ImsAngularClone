@@ -1,9 +1,9 @@
 import { Component, EventEmitter,Output } from '@angular/core';
-
+import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-menu',
-  standalone: true, // if you are using standalone components
-  imports: [],
+  standalone: true, 
+  imports: [RouterModule],
   template: `
     <div class="menu" 
     [style.width]="menuWidth"    
@@ -13,7 +13,7 @@ import { Component, EventEmitter,Output } from '@angular/core';
       <img [style.display]="isImageVisible ? 'block' : 'none'" [src]="imgSource" />
       <i [style.display]="isImageVisible ? 'none' : 'block'"  class="pi pi-bars"></i>
       <div class="menu-items">
-        <div [style.justifyContent] = "isImageVisible ? 'flex-start' : 'center'" [style.paddingLeft] = "isImageVisible ? '15px' : '0'" class ="menu-item">
+        <div [style.justifyContent]="isImageVisible ? 'flex-start' : 'center'" [style.paddingLeft] = "isImageVisible ? '15px' : '0'" class ="menu-item" [routerLink]="'/'" routerLinkActive="active">
           <i class="pi pi-home" style="font-size: 1.0rem"></i>
           <span [style.display]="isImageVisible ? 'block' : 'none'" [style.marginLeft] class="menu-item-text">Home</span>
         </div>
