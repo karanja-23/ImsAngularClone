@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter,Output } from '@angular/core';
 
 @Component({
   selector: 'app-menu',
@@ -70,13 +70,17 @@ export class MenuComponent {
   isImageVisible = false;
   imgSource = 'assets/menuLogo.png';
 
+  
   onMouseEnter() {
     this.menuWidth = '200px';
     this.isImageVisible = true;
+   
+
   }
  
   onMouseLeave() {
     this.menuWidth = '60px';
     this.isImageVisible = false;
+   
   }
  }
