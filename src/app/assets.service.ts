@@ -9,6 +9,7 @@ export class AssetsService {
   async getAssets() {
     const response = await fetch(this.url);
     const data = await response.json();
+    localStorage.setItem('assets', JSON.stringify(data));
     return data;
   }
 }

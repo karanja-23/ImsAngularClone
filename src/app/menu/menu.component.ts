@@ -23,7 +23,7 @@ import { RouterModule } from '@angular/router';
           <i class="pi pi-home" style="font-size: 1.0rem"></i>
           <span [style.display]="isImageVisible ? 'block' : 'none'" [style.marginLeft] class="menu-item-text">Home</span>
         </div>
-        <div [style.justifyContent] = "isImageVisible ? 'flex-start' : 'center'" [style.paddingLeft] = "isImageVisible ? '15px' : '0'" class ="menu-item">
+        <div [style.justifyContent] = "isImageVisible ? 'flex-start' : 'center'" [style.paddingLeft] = "isImageVisible ? '15px' : '0'" class ="menu-item" [routerLink]="'/documents'" routerLinkActive="active">
           <i class="pi pi-file" style="font-size: 1.0rem"></i>
           <span [style.display]="isImageVisible ? 'block' : 'none'" [style.marginLeft] class="menu-item-text">Documents</span>
         </div>
