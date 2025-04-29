@@ -19,7 +19,7 @@ import { DatePipe } from '@angular/common';
       <form>
         <input type="search" placeholder="Search">
       </form>
-      <i class="pi pi-search" style="font-size: 1.0rem"></i>
+      <i class="pi pi-search" style="font-size: 0.9rem"></i>
     
     </div>
     

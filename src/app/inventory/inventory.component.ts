@@ -1,14 +1,16 @@
 import { Component } from '@angular/core';
 import { TableComponent } from '../table/table.component';
 @Component({
-  selector: 'app-home',
+  selector: 'app-inventory',
   imports: [TableComponent],
   template: `
     <div>
     
-      
+      <app-table></app-table>
     </div>
   `,
-  styleUrl: './home.component.css',
+  styleUrl: './inventory.component.css'
 })
-export class HomeComponent {}
+export class InventoryComponent {
+
+}

@@ -18,8 +18,9 @@
     border-left: none;
 }
 .menu img{    
-    height: 50px;
-    padding: 7px 0px;
+    height: 40px;
+    padding: 12px 0px 0px 0px;
+    box-sizing: border-box;
  }
  .pi-bars{
     padding: 7px 0px;

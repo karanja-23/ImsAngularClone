@@ -13,43 +13,25 @@ import { RouterModule } from '@angular/router';
       <img [style.display]="isImageVisible ? 'block' : 'none'" [src]="imgSource" />
       <i [style.display]="isImageVisible ? 'none' : 'block'"  class="pi pi-bars"></i>
       <div class="menu-items">
-        <div [style.justifyContent]="isImageVisible ? 'flex-start' : 'center'" [style.paddingLeft] = "isImageVisible ? '15px' : '0'" class ="menu-item" [routerLink]="'/'" routerLinkActive="active">
+        <div [style.justifyContent]="isImageVisible ? 'flex-start' : 'center'" 
+        [style.paddingLeft] = "isImageVisible ? '15px' : '0'" class ="menu-item" 
+        [routerLink]="'/'" 
+        [routerLinkActiveOptions]="{exact: true}"
+        routerLinkActive="active"
+        
+        >
           <i class="pi pi-home" style="font-size: 1.0rem"></i>
           <span [style.display]="isImageVisible ? 'block' : 'none'" [style.marginLeft] class="menu-item-text">Home</span>
         </div>
         <div [style.justifyContent] = "isImageVisible ? 'flex-start' : 'center'" [style.paddingLeft] = "isImageVisible ? '15px' : '0'" class ="menu-item">
-          <i class="pi pi-warehouse" style="font-size: 1.0rem"></i>
-          <span [style.display]="isImageVisible ? 'block' : 'none'" [style.marginLeft] class="menu-item-text">Fixed Assets</span>
+          <i class="pi pi-file" style="font-size: 1.0rem"></i>
+          <span [style.display]="isImageVisible ? 'block' : 'none'" [style.marginLeft] class="menu-item-text">Documents</span>
         </div>
-        <div [style.justifyContent] = "isImageVisible ? 'flex-start' : 'center'" [style.paddingLeft] = "isImageVisible ? '15px' : '0'" class ="menu-item">
-          <i class="pi pi-shopping-cart" style="font-size: 1.0rem"></i>
-          <span [style.display]="isImageVisible ? 'block' : 'none'" [style.marginLeft] class="menu-item-text">Orders</span>
+        <div [style.justifyContent] = "isImageVisible ? 'flex-start' : 'center'" [style.paddingLeft] = "isImageVisible ? '15px' : '0'" class ="menu-item" [routerLink]="'/inventory'" routerLinkActive="active">
+          <i class="pi pi-barcode" style="font-size: 1.0rem"></i>
+          <span [style.display]="isImageVisible ? 'block' : 'none'" [style.marginLeft] class="menu-item-text">Inventory</span>
         </div>
-        <div [style.justifyContent] = "isImageVisible ? 'flex-start' : 'center'" [style.paddingLeft] = "isImageVisible ? '15px' : '0'" class ="menu-item">
-          <i class="pi pi-shop" style="font-size: 1.0rem"></i>
-          <span [style.display]="isImageVisible ? 'block' : 'none'" [style.marginLeft] class="menu-item-text">Vendors</span>
-        </div>
-        
-        <div [style.justifyContent] = "isImageVisible ? 'flex-start' : 'center'" [style.paddingLeft] = "isImageVisible ? '15px' : '0'" class ="menu-item">
-          <i class="pi pi-book" style="font-size: 1.0rem"></i>
-          <span [style.display]="isImageVisible ? 'block' : 'none'" [style.marginLeft] class="menu-item-text">Requests</span>
-        </div>
-        <div [style.justifyContent] = "isImageVisible ? 'flex-start' : 'center'" [style.paddingLeft] = "isImageVisible ? '15px' : '0'" class ="menu-item">
-          <i class="pi pi-clipboard" style="font-size: 1.0rem"></i>
-          <span [style.display]="isImageVisible ? 'block' : 'none'" [style.marginLeft] class="menu-item-text">Returns</span>
-        </div>
-        <div [style.justifyContent] = "isImageVisible ? 'flex-start' : 'center'" [style.paddingLeft] = "isImageVisible ? '15px' : '0'" class ="menu-item">
-          <i class="pi pi-building" style="font-size: 1.0rem"></i>
-          <span [style.display]="isImageVisible ? 'block' : 'none'" [style.marginLeft] class="menu-item-text">Spaces</span>
-        </div>
-        <div [style.justifyContent] = "isImageVisible ? 'flex-start' : 'center'" [style.paddingLeft] = "isImageVisible ? '15px' : '0'" class ="menu-item">
-          <i class="pi pi-users" style="font-size: 1.0rem"></i>
-          <span [style.display]="isImageVisible ? 'block' : 'none'" [style.marginLeft] class="menu-item-text">Users</span>
-        </div>
-        <div [style.justifyContent] = "isImageVisible ? 'flex-start' : 'center'" [style.paddingLeft] = "isImageVisible ? '15px' : '0'" class ="menu-item">
-          <i class="pi pi-lock" style="font-size: 1.0rem"></i>
-          <span [style.display]="isImageVisible ? 'block' : 'none'" [style.marginLeft] class="menu-item-text">Permissions</span>
-        </div>
+    
       </div>
       <div class="profile">
           <div [style.justifyContent] = "isImageVisible ? 'flex-start' : 'center'" [style.paddingLeft] = "isImageVisible ? '25px' : '0'" class ="menu-item">
